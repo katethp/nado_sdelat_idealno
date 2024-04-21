@@ -50,6 +50,10 @@ video {
   padding-left: 0, 1em;
 }
 
+.page__heading:hover .span {
+  color: #4C4C4C;
+}
+
 .page__heading:hover::before {
   content: "На самом деле нет.\AВажнее &mdash; научиться ошибаться.";
   white-space: pre;
