@@ -1,11 +1,13 @@
 body {
+  position: relative;
   margin: 0;
   height: 100vh;
-  display: flex;
+ 
   justify-content: center;
   align-items: center;
-  position: relative;
+  z-index: 1; 
 }
+
 
 h1 {
   position: absolute;
@@ -21,6 +23,8 @@ h1 {
 
 .page__heading {
   z-index: 2;
+ 
+  
 }
 
 .span {
@@ -29,13 +33,30 @@ h1 {
   opacity: 0px;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
 video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  z-index: 1;
 }
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255,0.3); 
+  z-index: 2;
+}
+
 
 *,
 *::before,
@@ -50,6 +71,7 @@ video {
   padding-left: 0, 1em;
 }
 
+
 .page__heading:hover .span {
   color: #4C4C4C;
 }
@@ -63,19 +85,20 @@ video {
   white-space: pre;
   font-family: "Raleway-Regular";
   font-size: 35px;
+  font-weight:400;
   position: absolute;
   width: auto;
   height: 142px;
-  top: 182px;
-  left: 836px;
+  top: 50%;
+  left: 50%;
   padding: 36px 44px;
   background-color: white;
   border-radius: 20px;
-  border: 2px solid #000000;
-  box-sizing: border-box;
+  border: 2px solid #000;
   opacity: 1;
   transform: translate(-50%, -50%);
   z-index: 3;
+  letter-spacing: 0px;
   line-height: 35px;
   box-shadow: 0px 10px black;
 }
