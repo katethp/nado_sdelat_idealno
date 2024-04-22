@@ -1,0 +1,11 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  background-color: #fdafe7;
+  position: relative;
+  min-width: 800px;
+
+}
